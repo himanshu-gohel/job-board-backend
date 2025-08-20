@@ -92,6 +92,3 @@ JobBoard is a full-stack web application to explore jobs, apply, and manage resu
 * Frontend can be deployed on **Vercel**.
 * Update `NEXT_PUBLIC_API_BASE_URL` in frontend `.env` to the deployed backend URL.
 
----
-
-Do you want me to **also add a “Folder Structure” section** like typical READMEs?
