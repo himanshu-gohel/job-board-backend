@@ -23,7 +23,11 @@ if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
 
 // Middleware
 app.use(helmet());
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:3000", "https://your-frontend.vercel.app"],
+  })
+);
 app.use(morgan('dev'));
 app.use(express.json({ limit: '1mb' }));
 app.use(`/${uploadDir}`, express.static(uploadDir));
